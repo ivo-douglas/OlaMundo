@@ -3,30 +3,32 @@ spine = input()
 group = input()
 nutrition = input()
 
+#a == coluna
+#b == grupo
 
+if spine == 'vertebrado':
+    if group == 'ave':
+        if nutrition == 'onivoro':
+            print('pomba')
+        elif nutrition == 'carnivoro':
+            print('aguia')
+    else:
+        if group == 'mamifero':
+            if nutrition == 'onivoro':
+                print('homem')
+            elif nutrition == 'herbivoro':
+                print('vaca')
 
-if spine == 'vertebrado' and group == 'ave' and nutrition == 'carnivoro':
-    animal = "aguia"
-    
-elif spine == 'vertebrado' and group == 'ave' and nutrition == 'onivoro':
-    animal = "pomba"
-    
-elif spine == 'vertebrado' and group == 'mamifero' and nutrition == 'onivoro':
-    animal = "homem"
-    
-elif spine == 'vertebrado' and group == 'mamifero' and nutrition == 'herbivoro':
-    animal = "vaca"
-    
-elif spine == 'invertebrado' and group == 'inseto' and nutrition == 'hematofogo':
-    animal = "pulga"
-    
-elif spine == 'invertebrado' and group == 'inseto' and nutrition == 'herbivoro':
-    animal = "lagarta"
-    
-elif spine == 'invertebrado' and group == 'anelideo' and nutrition == 'hematofogo':
-    animal = "sanguessuga"
-    
-elif spine == 'invertebrado' and group == 'anelideo' and nutrition == 'onivoro':
-    animal = "minhoca"
-    
-print(animal)
+else:
+    if spine == 'invertebrado':
+        if group == 'inseto':
+            if nutrition == 'hematofago':
+                print("pulga")
+            elif nutrition == 'herbivoro':
+                print("lagarta")
+        else:
+            if group == 'anelideo':
+                if nutrition == 'hematofago':
+                    print("sanguessuga")
+                elif nutrition == 'onivoro':
+                    print("minhoca")
